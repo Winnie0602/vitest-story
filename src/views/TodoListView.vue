@@ -1,0 +1,9 @@
+<template>
+  <div>
+    <h1>Todo List</h1>
+    <div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div>
+    <button type="button" class="btn btn-primary">Primary</button>
+  </div>
+</template>
+
+<style></style>
