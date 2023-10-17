@@ -15,7 +15,7 @@ describe('TodoCard', () => {
       const wrapper = mount(TodoCard)
 
       // 尋找元件內的元素, 並點擊它 
-      wrapper.find('.btn').trigger('click')
+      wrapper.find('[data-test="todo-btn"]').trigger('click')
       
       // 測試axiosGet是否會被call一次
       expect(axiosGet).toHaveBeenCalledTimes(1)

@@ -8,6 +8,7 @@ render: () => ({
     components: { TodoListView },
     template: '<todo-list-view />',
 }),
+// args: { todoArr: ['123'] },s
 parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/vue/configure/story-layout
     layout: 'fullscreen',

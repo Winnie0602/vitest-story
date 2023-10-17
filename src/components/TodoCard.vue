@@ -21,6 +21,7 @@ const completeHandler = async () => {
     <div
       @click="completeHandler"
       class="alert"
+      data-test="todo-btn"
       :class="type === 'todo' ? 'alert-primary' : 'alert-dark'"
       role="alert"
     >
