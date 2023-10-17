@@ -10,22 +10,19 @@ const emit = defineEmits(['completeHandler'])
 
 const completeHandler = async () => {
   emit('completeHandler', props.todo)
+
+  // 測試功能練習用
   axios.get('https://pokeapi.co/api/v2/pokemon/ditto')
 }
-
-// onMounted(() => {
-//   axios.get('https://pokeapi.co/api/v2/pokemon/ditto')
-// })
 </script>
 
 <template>
   <div class="">
     <div
       @click="completeHandler"
-      class="alert alert-info btn"
-      :class="type === 'todo' ? 'alert-info' : 'alert-dark'"
+      class="alert"
+      :class="type === 'todo' ? 'alert-primary' : 'alert-dark'"
       role="alert"
-      data-test="btn"
     >
       {{ todo }}
     </div>

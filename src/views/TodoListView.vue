@@ -24,6 +24,7 @@ const completeHandler = (todo: string) => {
   <div class="container m-5">
     <!-- 代辦清單 -->
     <h1>Todo List</h1>
+
     <input
       class="my-3"
       type="text"
@@ -32,7 +33,7 @@ const completeHandler = (todo: string) => {
       name=""
       id=""
     />
-    <button @click="addHandler" type="button" class="ml-2 btn btn-primary">新增</button>
+    <button @click="addHandler" type="button" class="mx-2 btn btn-primary">新增</button>
     <hr class="my-5" />
     <TodoCard
       type="todo"
